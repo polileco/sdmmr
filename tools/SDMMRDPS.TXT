@@ -1,0 +1,14 @@
++----------------------------------------+
+| SW | Descricao                         |
+|1234| 0 - OFF / 1 - ON                  |
+|----+-----------------------------------|
+|0100| SD com 512k Mapper / 512k Megaram |
+|0101| SD com 1M Megaram                 |
+|0110| SD com 1M Mapper                  |
+|0111| SD somente                        |
+|0000| 512k Mapper / 512k Megaram        |
+|0001| 1M Megaram                        |
+|0010| 1M Mapper                         |
+|0011| 0k Mapper / 0k Megaram            | 
++----------------------------------------+
+
