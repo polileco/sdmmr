@@ -49,7 +49,7 @@ After the firmware update, it is advisable to follow the steps below if you alre
 ## Versions
 
 * 1.0.4
-1. Original version with Nextor kernel 2.0 alpha.
+1. Original version with Nextor kernel 2.1.0 alpha 2.
 * 1.0.5
 1. First Interaction. Base codes (device.bin and custom_code.bin) 'ripped' from driver 1.0.4;
 2. Correction of credits, names and driver version;
