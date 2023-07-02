@@ -1,39 +1,68 @@
-SDMMR 1024K
+# SDMMR 1024K
 
- * History
- 
- O hardware da SDMMR é baseado na PCB ´SDMapper´ (versão 1) de Luciano Sturaro e driver desenvolvido por Fábio Belavenuto, sem que esses tenham participado do desenvolvimento nem do hardware ou do software.
- A PCB da ´SDMMR´ foi desenvolvida por Phillipe H. (MG2) com a participação de Fabf e 6502man no desenvolvimento do software. As seguintes alterações foram feitas:
-  - Troca do CPLD para o Altera EPM240
-  - Aumento na memória de 512K para 1024K
-  - Possibilidade do uso em conjunto de Mapper e MegaRAM
-  - Ajuste do driver 1.0.4 da SDMapper (sem alteração da versão)
- 
- * Links
- 
- https://github.com/fbelavenuto/msxsdmapper/
- http://mymsx2.free.fr/montages/Cartouche_SD_MMR_1024K/cartouche_sdmmr_1024k.html
- 
- * How-to
+Clique [aqui](readme_pt-br.md) para a versão em Português.
 
- Caso tenha atualizado o driver é aconselhável seguir os passos abaixo.
- 
-  1. Caso já tenha o SD preparado e 'bootável' copie o arquivo NEXTOR.SYS anexo neste pacote para a sua partição de boot.
-  2. Caso exista, no pacote TOOLS.ZIP encontram-se os utilitários que foram atualizados para o kernel do Nextor. Extraia-os para a raiz ou o diretório do SD sobrescrevendo os antigos executáveis.
+## History
 
-* Updates
+**SDMMR 1024K** [1] was developed by **Phillipe H. (MG2)** with colaboration from **Fabf** and **6502man**. It is based on **SDMapper** (version 1) [2] by **Luciano Sturaro** and **Fábio Belavenuto**, without their having participated in its development. The following changes were made:
 
-- Driver 1.0.5
+1. Change CPLD to Altera EPM240;
 
- Primeira interação. Códigos base (device.bin e custom_code.bin) 'ripados' do driver 1.0.4
- Correção dos créditos, nomes e versão do driver
- Atualização do kernel Nextor para a versão 2.1.1
- 
-- ToDo
+2. Increased memory from 512K to 1024K;
 
- Verificar o ponteiro para a página 0 do Nextor no código do MG2.
-  - BREAKING CHANGE (https://github.com/Konamiman/Nextor/releases/tag/2.1.0-beta2)
-  - https://github.com/uniabis/msxsdmapper/commit/2fd551f14bd8a22a6784f32f843cbe95f4d17ae1
+3. Possibility of using Mapper and MegaRAM together;
+
+4. SDMapper driver 1.0.4 tweak (no version change).
+* Links
   
- Verificar a configuração de devices hot-plug
-  - O uso do utilitário LOCK.COM do Nextor causa instabilidade de operação da máquina.
+   [1] [SDMMR 1024K](http://mymsx2.free.fr/montages/Cartouche_SD_MMR_1024K/cartouche_sdmmr_1024k.html)
+  
+   [2] [SDMapper](https://github.com/fbelavenuto/msxsdmapper/)
+
+## Structure of the repository
+
+- Firmware - Update versions
+- Nextor - Kernel base
+- Tools - Kernel and firmware update utilities
+
+## How-to
+
+<br><span style="color:red">**WARNING: Do not try to update the firmware from the SDMMR itself.**</span><br><br>
+
+The update needs to be done from another medium, such as a floppy disk.
+
+Copy the desired firmware version file (available in the **firmware** directory) and the update utility (_UPDSDMMR.COM_ available in the **tools** directory). If you are using a floppy disk, also copy your own MSX-DOS 1 boot files (_MSX-DOS.SYS_ and _COMMAND.COM_).
+
+Boot MSX disabling the kernel [1] of **SDMMR 1024K**, if your cartridge is in _slot 1_ just keep the "**Q**" key pressed. After booting from the chosen media, run, for example:
+
+`UPDSDMMR SDMMR105.ROM`
+
+After the firmware update, it is advisable to follow the steps below if you already have a 'bootable' SD with a previous version of Nextor:
+
+1. Copy from **tools** the _NEXTOR.SYS_ file available in the respective directory of the firmware version used;
+
+2. If there is, in the same directory, the package _TOOLS.ZIP_ that contains the utilities that were updated or created for the new Nextor kernel. Extract them to SD overwriting your previous files.
+* Links
+  
+   [1] [MSX - Boot keys](https://www.msx.org/wiki/Boot_keys)
+
+## Versions
+
+* 1.0.4
+1. Original version with Nextor kernel 2.0 alpha.
+* 1.0.5
+1. First Interaction. Base codes (device.bin and custom_code.bin) 'ripped' from driver 1.0.4;
+2. Correction of credits, names and driver version;
+3. Nextor kernel update to version 2.1.1.
+
+## ToDo
+
+* Check for Nextor page 0 pointer in MG2 code.
+  
+  - https://github.com/Konamiman/Nextor/releases/tag/2.1.0-beta2
+  - https://github.com/uniabis/msxsdmapper/commit/2fd551f14bd8a22a6784f32f843cbe95f4d17ae1
+    <br/><br/>
+
+* Check the configuration of hot-plug devices
+  
+  - Using Nextor's LOCK.COM utility causes machine operation instability.
