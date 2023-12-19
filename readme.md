@@ -25,13 +25,13 @@ Clique [aqui](readme_pt-br.md) para a versão em Português.
 - Nextor - Kernel base
 - Tools - Kernel and firmware update utilities
 
-## How-to
+## How-to update the cartridge
 
 $${\color{red}WARNING\\: \space Do\space not\space try\space to\space update\space the\space firmware\space from\space the\space SDMMR\space itself.}$$
 
 The update needs to be done from another medium, such as a floppy disk.
 
-Copy the desired firmware version file (available in the **firmware** directory) and the update utility (_UPDSDMMR.COM_ available in the **tools** directory). If you are using a floppy disk, also copy your own MSX-DOS 1 boot files (_MSX-DOS.SYS_ and _COMMAND.COM_).
+Copy the desired firmware version file (available in the **firmware** directory), the latest firmware that is working in your cartridge (to recovery if needed) and the update utility (_UPDSDMMR.COM_ available in the **tools** directory). If you are using a floppy disk, also copy your own MSX-DOS 1 boot files (_MSX-DOS.SYS_ and _COMMAND.COM_).
 
 Boot MSX disabling the kernel [1] of **SDMMR 1024K**, if your cartridge is in _slot 1_ just keep the "**Q**" key pressed. After booting from the chosen media, run, for example:
 
@@ -54,15 +54,5 @@ After the firmware update, it is advisable to follow the steps below if you alre
 1. First Interaction. Base codes (device.bin and custom_code.bin) 'ripped' from driver 1.0.4;
 2. Correction of credits, names and driver version;
 3. Nextor kernel update to version 2.1.1.
-
-## ToDo
-
-* Check for Nextor page 0 pointer in MG2 code.
-  
-  - https://github.com/Konamiman/Nextor/releases/tag/2.1.0-beta2
-  - https://github.com/uniabis/msxsdmapper/commit/2fd551f14bd8a22a6784f32f843cbe95f4d17ae1
-    <br/><br/>
-
-* Check the configuration of hot-plug devices
-  
-  - Using Nextor's LOCK.COM utility causes machine operation instability.
+- 1.0.6
+1. Nextor kernel update to version 2.1.2.
