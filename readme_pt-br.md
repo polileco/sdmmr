@@ -23,7 +23,7 @@ A **SDMMR 1024K** [1] foi desenvolvida por **Phillipe H. (MG2)** com a participa
 - Nextor - Arquivos do Kernel base
 - Tools - Utilitários do kernel e de atualização do firmware
 
-## How-to update o firmware
+## Como atualizar o firmware
 
 <br><span style="color:red">**ATENÇÃO: Não tente atualizar o firmware à partir da própria SDMMR**.</span><br><br>
 
