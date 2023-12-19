@@ -27,7 +27,7 @@ Clique [aqui](readme_pt-br.md) para a versão em Português.
 
 ## How-to
 
-<br><span style="color:red">**WARNING: Do not try to update the firmware from the SDMMR itself.**</span><br><br>
+$${\color{red}WARNING\\: \space Do\space not\space try\space to\space update\space the\space firmware\space from\space the\space SDMMR\space itself.}$$
 
 The update needs to be done from another medium, such as a floppy disk.
 
