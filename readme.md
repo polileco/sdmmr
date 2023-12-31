@@ -4,7 +4,7 @@ Clique [aqui](readme_pt-br.md) para a versão em Português.
 
 ## History
 
-**SDMMR 1024K** [1] was developed by **Phillipe H. (MG2)** with colaboration from **Fabf** and **6502man**. It is based on **SDMapper** (version 1) [2] by **Luciano Sturaro** and **Fábio Belavenuto**, without their having participated in its development. The following changes were made:
+**SDMMR 1024K** [1] was developed by **Phillipe H. (MG2)** with colaboration from **Fabf** and **6502man**. It is based on **SDMapper** (version 1) [2] by **Fábio Belavenuto** and **Luciano Sturaro**. The following changes were made:
 
 1. Change CPLD to Altera EPM240;
 
@@ -21,8 +21,8 @@ Clique [aqui](readme_pt-br.md) para a versão em Português.
 
 ## Structure of the repository
 
-- Firmware - Update versions
-- Nextor - Kernel base
+- Firmware - Firmware versions
+- Nextor - Base kernel files
 - Tools - Kernel and firmware update utilities
 
 ## How-to update the cartridge
@@ -31,17 +31,17 @@ $${\color{red}WARNING\\: \space Do\space not\space try\space to\space update\spa
 
 The update needs to be done from another medium, such as a floppy disk.
 
-Copy the desired firmware version file (available in the **firmware** directory), the firmware file that is working in your cartridge (to recovery if needed) and the update utility (_UPDSDMMR.COM_ available in the **tools** directory). If you are using a floppy disk, also copy your own MSX-DOS 1 boot files (_MSX-DOS.SYS_ and _COMMAND.COM_).
+Copy the desired firmware version file (available in the **firmware** directory), the firmware of the same version that is currently working in your cartridge (to recovery if needed) and the update utility (_UPDSDMMR.COM_ available in the **tools** directory). If you are using a floppy disk, also copy your own MSX-DOS 1 boot files (_MSX-DOS.SYS_ and _COMMAND.COM_).
 
-Boot MSX disabling the kernel [1] of **SDMMR 1024K**, if your cartridge is in _slot 1_ just keep the "**Q**" key pressed. After booting from the chosen media, run, for example:
+Boot MSX disabling the kernel [1] of **SDMMR 1024K**, if your cartridge is in _slot 1_ just keep the "**Q**" key pressed. After booting from the chosen media you can run, for example:
 
 `UPDSDMMR SDMMR105.ROM`
 
 After the firmware update, it is advisable to follow the steps below if you already have a 'bootable' SD with a previous version of Nextor:
 
-1. Copy from **tools** the _NEXTOR.SYS_ file available in the respective directory of the firmware version used;
+1. If exist copy from **tools** the _NEXTOR.SYS_ (for the root of the SD) and the _.COM_ file(s) (for example, to the directory where the current Nextor executables are), available in the respective directory of the same firmware version;
 
-2. If there is, in the same directory, the package _TOOLS.ZIP_ that contains the utilities that were updated or created for the new Nextor kernel. Extract them to SD overwriting your previous files.
+2. If there is in the same directory the package _TOOLS.ZIP_ extract them to SD overwriting your previous files. That archive contains the utilities that were updated or created for the new Nextor kernel.
 * Links
   
    [1] [MSX - Boot keys](https://www.msx.org/wiki/Boot_keys)
