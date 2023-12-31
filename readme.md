@@ -29,7 +29,7 @@ Clique [aqui](readme_pt-br.md) para a versão em Português.
 
 $${\color{red}WARNING\\: \space Do\space not\space try\space to\space update\space the\space firmware\space from\space the\space SDMMR\space itself.}$$
 
-The update needs to be done from another medium, such as a floppy disk.
+The update needs to be done booting the MSX from another medium, such as a floppy disk.
 
 Copy the desired firmware version file (available in the **firmware** directory), the firmware of the same version that is currently working in your cartridge (to recovery if needed) and the update utility (_UPDSDMMR.COM_ available in the **tools** directory). If you are using a floppy disk, also copy your own MSX-DOS 1 boot files (_MSX-DOS.SYS_ and _COMMAND.COM_).
 
@@ -39,7 +39,7 @@ Boot MSX disabling the kernel [1] of **SDMMR 1024K**, if your cartridge is in _s
 
 After the firmware update, it is advisable to follow the steps below if you already have a 'bootable' SD with a previous version of Nextor:
 
-1. If exists, copy from the directory of the firmware version used in **tools** the file _NEXTOR.SYS_ to the root of the SD and the file(s) _.COM_ for example, to the directory where is the current Nextor executables are;
+1. If exists, copy from the directory of the firmware version used in **tools** the file _NEXTOR.SYS_ to the root of the SD and the file(s) _.COM_ for example, to the directory where is the current Nextor utilities are;
 
 2. If there is in the same directory the package _TOOLS.ZIP_ extract them to SD overwriting your previous files. That archive contains the utilities that were updated or created for the new Nextor kernel.
 * Links

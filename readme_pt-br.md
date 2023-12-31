@@ -27,7 +27,7 @@ A **SDMMR 1024K** [1] foi desenvolvida por **Phillipe H. (MG2)** com a participa
 
 <br><span style="color:red">**ATENÇÃO: Não tente atualizar o firmware à partir da própria SDMMR**.</span><br><br>
 
-A atualização precisa ser feita à partir de outra mídia como, por exemplo, um disquete.
+A atualização precisa ser feita dando o boot no MSX à partir de outra mídia como, por exemplo, um disquete.
 
 Copie o arquivo da versão do firmware desejado (disponível no diretório **firmware**), o arquivo do firmware que está funcionando em seu cartucho (para recuperação, se necessário) e o utilitário de atualização (_UPDSDMMR.COM_ disponível no diretório **tools**). Caso esteja usando um disquete copie também seus próprios arquivos de boot do MSX-DOS 1 (_MSX-DOS.SYS_ e _COMMAND.COM_).
 
@@ -37,7 +37,7 @@ Faça o boot do MSX desabilitando o kernel [1] da **SDMMR 1024K**, se o seu cart
 
 Após a atualização do firmware é aconselhável seguir os passos abaixo caso já tenha um SD 'bootável' com uma versão anterior do Nextor:
 
-1. Caso exista, copie do diretório da versão do firmware utilizado em **tools** o arquivo _NEXTOR.SYS_ para a raiz do SD e os arquivo(s) _.COM_ para, por exemplo, o diretório onde estão os executáveis atuais do Nextor;
+1. Caso exista, copie do diretório da versão do firmware utilizado em **tools** o arquivo _NEXTOR.SYS_ para a raiz do SD e os arquivo(s) _.COM_ para, por exemplo, o diretório onde estão os utilitários atuais do Nextor;
 
 2. Caso exista, no mesmo diretório o pacote _TOOLS.ZIP_ extraia-o para o SD sobrescrevendo os seus arquivos anteriores. Esse pacote contém os utilitários que foram atualizados ou criados para o novo kernel do Nextor.
 * Links
