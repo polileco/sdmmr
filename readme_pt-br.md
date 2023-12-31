@@ -2,7 +2,7 @@
 
 ## History
 
-A **SDMMR 1024K** [1] foi desenvolvida por **Phillipe H. (MG2)** com a participação de **Fabf** e **6502man**. Ela é baseada na **SDMapper** (versão 1) [2] de **Luciano Sturaro** e **Fábio Belavenuto**, sem que eles tenham participado do desenvolvimento desta. As seguintes alterações foram feitas:
+A **SDMMR 1024K** [1] foi desenvolvida por **Phillipe H. (MG2)** com a participação de **Fabf** e **6502man**. Ela é baseada na **SDMapper** (versão 1) [2] de **Fábio Belavenuto** e **Luciano Sturaro**. As seguintes alterações foram feitas:
 
 1. Troca do CPLD para o Altera EPM240;
 
@@ -19,8 +19,8 @@ A **SDMMR 1024K** [1] foi desenvolvida por **Phillipe H. (MG2)** com a participa
 
 ## Estrutura do repositório
 
-- Firmware - Versões das atualizações
-- Nextor - Arquivos base do kernel
+- Firmware - Versões do firmware para atualização
+- Nextor - Arquivos base do kernel do Nextor
 - Tools - Utilitários do kernel e de atualização do firmware
 
 ## Como atualizar o firmware
@@ -37,7 +37,7 @@ Faça o boot do MSX desabilitando o kernel [1] da **SDMMR 1024K**, se o seu cart
 
 Após a atualização do firmware é aconselhável seguir os passos abaixo caso já tenha um SD 'bootável' com uma versão anterior do Nextor:
 
-1. Caso exista, copie de **tools** o arquivo _NEXTOR.SYS_ (para a raiz do SD) e os arquivo(s) _.COM_ (para, por exemplo, o diretório onde estão os executáveis atuais do Nextor), disponíveis no diretório da versão do firmware utilizado;
+1. Caso exista, copie do diretório da versão do firmware utilizado em **tools** o arquivo _NEXTOR.SYS_ para a raiz do SD e os arquivo(s) _.COM_ para, por exemplo, o diretório onde estão os executáveis atuais do Nextor;
 
 2. Caso exista, no mesmo diretório o pacote _TOOLS.ZIP_ extraia-o para o SD sobrescrevendo os seus arquivos anteriores. Esse pacote contém os utilitários que foram atualizados ou criados para o novo kernel do Nextor.
 * Links
