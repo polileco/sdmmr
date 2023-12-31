@@ -33,7 +33,7 @@ The update needs to be done from another medium, such as a floppy disk.
 
 Copy the desired firmware version file (available in the **firmware** directory), the firmware file that is working in your cartridge (to recovery if needed) and the update utility (_UPDSDMMR.COM_ available in the **tools** directory). If you are using a floppy disk, also copy your own MSX-DOS 1 boot files (_MSX-DOS.SYS_ and _COMMAND.COM_).
 
-Boot MSX disabling the kernel [1] of **SDMMR 1024K**, if your cartridge is in _slot 1_ and the switch is in the *OFF* position, just keep the "**Q**" key pressed. After booting from the chosen media, run, for example:
+Boot MSX disabling the kernel [1] of **SDMMR 1024K**, if your cartridge is in _slot 1_ just keep the "**Q**" key pressed. After booting from the chosen media, run, for example:
 
 `UPDSDMMR SDMMR105.ROM`
 

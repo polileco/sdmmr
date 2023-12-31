@@ -31,7 +31,7 @@ A atualização precisa ser feita à partir de outra mídia como, por exemplo, u
 
 Copie o arquivo da versão do firmware desejado (disponível no diretório **firmware**), o arquivo do firmware que está funcionando em seu cartucho (para recuperação, se necessário) e o utilitário de atualização (_UPDSDMMR.COM_ disponível no diretório **tools**). Caso esteja usando um disquete copie também seus próprios arquivos de boot do MSX-DOS 1 (_MSX-DOS.SYS_ e _COMMAND.COM_).
 
-Faça o boot do MSX desabilitando o kernel [1] da **SDMMR 1024K**, se o seu cartucho está no _slot 1_ e a chave na posicao _OFF_, basta manter a tecla "**Q**" pressionada. Após o boot pela mídia escolhida execute, por exemplo:
+Faça o boot do MSX desabilitando o kernel [1] da **SDMMR 1024K**, se o seu cartucho está no _slot 1_ basta manter a tecla "**Q**" pressionada. Após o boot pela mídia escolhida execute, por exemplo:
 
 `UPDSDMMR SDMMR105.ROM`
 
