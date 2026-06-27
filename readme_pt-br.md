@@ -54,3 +54,5 @@ Após a atualização do firmware é aconselhável seguir os passos abaixo caso 
 3. Atualização do kernel Nextor para a versão 2.1.1.
 - 1.0.6
 1. Atualização do kernel Nextor para a versão 2.1.2.
+- 1.0.7
+1. Atualização do kernel Nextor para a versão 2.1.4.

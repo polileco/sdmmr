@@ -56,3 +56,5 @@ After the firmware update, it is advisable to follow the steps below if you alre
 3. Nextor kernel update to version 2.1.1.
 - 1.0.6
 1. Nextor kernel update to version 2.1.2.
+- 1.0.7
+1. Nextor kernel update to version 2.1.4.
